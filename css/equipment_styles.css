@@ -1,0 +1,277 @@
+/*Styling for main content*/
+
+main > h2 {
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	background-color: rgb(255, 183, 28);
+	border: solid 1px black;
+	border-radius: 1rem;
+}
+
+main > p {
+	font-size: 120%;
+	text-align: justify;
+	padding: 0 2em 1em 2em;
+}
+
+#equipment-grid {
+	display: grid;
+	grid-template-rows: [content] 1fr;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-flow: columns;
+	border-right: solid 1px black;
+	margin: 0 2em 1em 2em;
+}
+
+.column {
+	background-color: rgb(255, 234, 222);
+	border: solid 1px black;
+	border-right: none;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.cell:not(:has(h2)) {
+	background-color: white;
+}
+
+.column .cell:not(:last-child) {
+	border-bottom: solid 1px black;
+}
+
+.cell * {
+	text-align: center;
+}
+
+#equipment-grid h2, #equipment-grid h3, #equipment-grid h4 {
+	text-transform: uppercase;
+}
+
+.cell:has(.nested-cell) {
+	display: flex;
+}
+
+.nested-cell, .column div:last-child {
+	flex-grow: 1;
+}
+
+.cell:not(:has(.nested-cell)) {
+	padding: 1em;
+}
+
+.nested-cell {
+	padding: 1em;
+}
+
+.cell .nested-cell:not(:last-child) {
+	border-right: solid 1px black;
+}
+
+h4.ball-group {
+	text-align: left;
+}
+
+.column .cell:has(h4.ball-group) {
+	border-bottom: none;
+}
+
+#balls .cell:has(h3.brands) {
+	border-top: solid 1px black;
+}
+
+#accessories .cell:not(:has(.nested-cell)) {
+	padding: 0.5em;
+}
+
+#equipment-grid #accessories .cell:has(h2) {
+	padding: 1em;
+}
+
+h3.brands {
+	font-style: italic;
+}
+
+h2#gallery-heading {
+	background-color: rgb(255, 234, 222);
+	margin-bottom: 1em;
+}
+
+#gallery-grid {
+	display: grid;
+	grid-template-rows: repeat(4, min-content);
+	grid-template-columns: 100%;
+	grid-row-gap: 2em;
+}
+
+#gallery-grid img {
+	border: solid 1px black;
+}
+
+#tables-photos, #balls-photos, #accessories-photos {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#tables-photos img, #balls-photos img, #accessories-photos img {
+	border-radius: 1em;
+}
+
+#gallery-grid .gallery {
+  position: relative;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  display: flex;
+  transition: left 0.5s ease-out;
+}
+
+.controls {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: solid 1px black;
+  border-radius: 1em;
+  background-color: white;
+}
+
+.controls button {
+  font-size: 2rem;
+  margin: 0 10px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button:hover {
+	color: rgb(150, 150, 150);
+}
+
+button:active {
+	color: rgb(28,169,222);
+}
+
+.reference {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+main a:link {
+	color: rgb(255, 183, 28);
+} 
+
+main a:visited {
+	color: rgb(176, 126, 19);
+}
+
+main a:hover {
+	color: rgb(255, 183, 28);
+}
+
+main a:active {
+	color: rgba(28,169,222,255);
+}
+
+figure {
+	margin: 2em 3em 1em 3em;
+	display: flex;
+	flex-direction: column;
+}
+
+figcaption {
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 130%;
+	margin: 1em 0 1em 3em;
+}
+
+figure img {
+	border: solid 1px black;
+	border-radius: 1em;
+	align-self: center;
+}
+
+figure p {
+	font-size: 120%;
+	text-align: justify;
+	padding: 1.5em 0 1em 0;
+}
+
+/* Styling for footer */
+
+footer {
+	background-color: black;
+	padding: 2em;
+	display: flex;
+	justify-content: flex-start;
+	color: white;
+}
+
+footer h3 {
+	font-style: normal;
+}
+
+#logo {
+	padding-right: 2em;
+	border-right: solid 1px white;
+}
+
+#copyright {
+	margin-top: 1em;
+}
+
+#read-next {
+	padding-left: 2em;
+}
+
+ul.footer-nav {
+	padding-left: 0;
+	padding-top: 2em;
+}
+
+ul.footer-nav a:link {
+	color: rgb(255, 183, 28);
+}
+
+ul.footer-nav a:visited {
+	color: rgb(176, 126, 19);
+}
+
+ul.footer-nav a:hover {
+	color: white;
+	font-size: 102%;
+	padding: 0.2em;
+}
+
+ul.footer-nav a:active {
+	color: rgba(28,169,222,255);
+}
+
+#backtotop {
+	position: fixed;
+	bottom: 1em;
+	right: 1.5em;
+}
+
+#backtotop h5 {
+	text-align: center;
+	font-size: 120%;
+	color: rgb(28,169,222);
+}
+
+#backtotop img {
+	width: 3em;
+	height: 3em;
+	border: solid 1px white;
+	border-radius: 0.5em;
+	background-color: white;
+}
+

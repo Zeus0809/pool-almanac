@@ -1,0 +1,283 @@
+/*Styling for main content*/
+
+#decor {
+	height: 1.5em;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	background-color: rgb(255, 183, 28);
+	border: solid 1px black;
+	border-radius: 1rem;
+	text-align: center;
+}
+
+h2 {
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0 auto;
+}
+
+h2:before, h2:after {
+  content: '';
+  display: block;
+  background-image: url(../multimedia/pics/8-ball.png);
+  background-size: 40px 43px;
+  background-repeat: no-repeat;
+  background-position: 0;
+  position: absolute;
+  width: 5%;
+  height: 50px;
+
+}
+
+h2:before {
+	top: 255px;
+	left: 30px;
+}
+
+h2:after {
+	top: 255px;
+	right: 30px;
+	background-position-x: 100%;
+}
+
+p.introduction {
+	margin: 2em;
+	padding: 0.5em 1em;
+	border-left: solid 10px rgba(28,169,222,255);
+	background-color: rgba(28,169,222,0.2);
+	font-size: 120%;
+}
+
+img:not([src*='logo']) {
+	border: solid 1px black;
+	border-radius: 1em;
+}
+
+.heading-flex {
+	display: flex;
+	justify-content: flex-end;
+	height: 100%;
+}
+
+.heading-flex h3 {
+	border: solid 1px black;
+	margin: auto;
+}
+
+.heading-flex img {
+	border-radius: 5px;
+}
+
+ol li {
+	padding: 0.5em 1em;
+	background-color: rgba(255,255,255, 0.5);
+}
+
+ol {
+	width: 80%;
+	margin: 2em auto;
+	padding-left: 0;
+	font-size: 120%;
+	counter-reset: my-counter;
+  	list-style: none;
+}
+
+ol li::before {
+  	counter-increment: my-counter;
+  	content: counter(my-counter);
+  	display: inline-block;
+  	width: 1.5em;
+	height: 1.5em;
+	font-size: 120%;
+	font-weight: bold;
+	background-color: rgb(28,169,222);
+	border: solid 1px black;
+	border-radius: 50%;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 0 0.5em 0.5em 0;
+}
+
+#break-flex {
+	display: flex;
+	margin-right: 2em;
+}
+
+.foul-flex {
+	display: flex;
+	margin-right: 5em;
+	margin-bottom: 2em;
+}
+
+ul .foul-flex:nth-child(odd) {
+	flex-direction: row-reverse;
+}
+
+#references {
+	position: relative;
+}
+
+#references li::before {
+	counter-increment: my-counter;
+  	content: counter(my-counter);
+  	display: inline-block;
+  	width: 1.5em;
+	height: 1.5em;
+	font-size: 120%;
+	font-weight: bold;
+	background-color: rgb(255, 183, 28);
+	border: solid 1px black;
+	border-radius: 50%;
+	line-height: 1.5em;
+	text-align: center;
+}
+
+#references ol {
+	margin: 0.5em 0;
+	width: 100%;
+}
+
+#references h3 {
+	background-color: white;
+}
+
+#example-rack {
+	display: flex;
+	align-items: center;
+}
+
+iframe {
+	width: 466px;
+	height: 262px;
+	border: solid 1px black;
+	border-radius: 1em;
+	margin-bottom: 1em;
+}
+
+main h3 {
+	font-size: 130%;
+	padding: 0.5em;
+	background-color: rgb(255, 232, 227);
+	border: solid 1px black;
+	border-radius: 0.5em;
+	width: 25%;
+	text-align: center;
+}
+
+main p {
+	font-size: 120%;
+}
+
+main p:not(.introduction) {
+	text-align: justify;
+	margin: 1em 0;
+	padding: 0.5em 1em;
+	background-color: rgba(255,255,255, 0.5);
+	line-height: 1.5em
+}
+
+dfn {
+	font-weight: bold;
+	color: white;
+	text-shadow: 0.05em 0.05em black,
+				 -0.05em -0.05em black,
+				 0.05em -0.05em black,
+				 -0.05em 0.05em black;
+	font-style: normal;
+	padding: 0.2em;
+}
+
+main a:link {
+	color: rgb(255, 183, 28);
+} 
+
+main a:visited {
+	color: rgb(176, 126, 19);
+}
+
+main a:hover {
+	color: rgb(255, 183, 28);
+}
+
+main a:active {
+	color: rgba(28,169,222,255);
+}
+
+.pro-tip {
+	display: inline-block;
+	font-weight: bold;
+	font-style: italic;
+}
+
+/*End of styling for main content*/
+
+/*Styling for footer*/
+
+footer {
+	background-color: black;
+	padding: 2em;
+	display: flex;
+	justify-content: flex-start;
+	color: white;
+}
+
+footer h3 {
+	font-style: normal;
+}
+
+#logo {
+	padding-right: 2em;
+	border-right: solid 1px white;
+}
+
+#copyright {
+	margin-top: 1em;
+}
+
+#read-next {
+	padding-left: 2em;
+}
+
+ul.footer-nav {
+	padding-left: 0;
+	padding-top: 2em;
+}
+
+ul.footer-nav a:link {
+	color: rgb(255, 183, 28);
+}
+
+ul.footer-nav a:visited {
+	color: rgb(176, 126, 19);
+}
+
+ul.footer-nav a:hover {
+	color: white;
+	font-size: 102%;
+	padding: 0.2em;
+}
+
+ul.footer-nav a:active {
+	color: rgba(28,169,222,255);
+}
+
+#backtotop {
+	position: fixed;
+	bottom: 1em;
+	right: 1.5em;
+}
+
+#backtotop h5 {
+	text-align: center;
+	font-size: 120%;
+	color: rgb(28,169,222);
+}
+
+#backtotop img {
+	width: 3em;
+	height: 3em;
+	border: solid 1px white;
+	border-radius: 0.5em;
+	background-color: white;
+}
+

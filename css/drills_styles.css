@@ -1,0 +1,415 @@
+/*Styling for main content*/
+
+h2 {
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	background-color: rgb(255, 183, 28);
+	border: solid 1px black;
+	border-radius: 1rem;
+}
+
+iframe {
+	border: solid 1px black;
+	border-radius: 1em;
+}
+
+p.introduction {
+	margin: 2em;
+	padding: 0.5em 1em;
+	border-left: solid 10px rgba(28,169,222,255);
+	background-color: rgba(28,169,222,0.2);
+	font-size: 120%;
+}
+
+main h3 {
+	font-size: 130%;
+	padding: 0.5em;
+	background-color: rgb(64, 161, 72);
+	border: solid 1px black;
+	border-radius: 0.5em;
+	width: 25%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+main h4 {
+	display: inline-block;
+	border: solid 1px black;
+	border-radius: 0.5em;
+	font-size: 120%;
+	text-transform: uppercase;
+	padding: 0.5em;
+	background-color: rgb(171, 255, 178);
+}
+
+#drill-rules {
+	text-align: center;
+}
+
+main p.list-heading {
+	display: inline-block;
+	margin: 1em 0;
+	padding: 0.5em 1em;
+	background-color: rgba(28,169,222,0.2);
+	line-height: 1.5em
+}
+
+#drill-rules h4 {
+	text-transform: none;
+	background-color: rgb(28,169,222);
+}
+
+#drill-rules ul li {
+	padding: 0.5em 1em;
+	background-color: rgba(255,255,255, 0.5);
+}
+
+#drill-rules ul {
+	display: inline-block;
+	margin: 0 auto 2em auto;
+	padding-left: 0;
+	font-size: 120%;
+	text-align: justify;
+	counter-reset: my-counter;
+  	list-style: none;
+}
+
+#drill-rules ul li::before {
+  	counter-increment: my-counter;
+  	content: counter(my-counter);
+  	display: inline-block;
+  	width: 1.5em;
+	height: 1.5em;
+	font-size: 120%;
+	font-weight: bold;
+	background-color: rgb(28,169,222);
+	border: solid 1px black;
+	border-radius: 50%;
+	line-height: 1.5em;
+	text-align: center;
+	margin: 0 0.5em 0.5em 0;
+}
+
+.drill-level > p:first-of-type {
+	font-size: 120%;
+	text-align: justify;
+	margin: 1em 2em;
+	padding: 0.5em 1em;
+	background-color: rgba(64, 161, 72,0.2);
+}
+
+#beginner {
+	display: grid;
+	grid-template-rows: repeat(9, min-content);
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+		"p-intro p-intro"
+		"sun sun"
+		"sun-no-order sun-order"
+		"sun-video-1 sun-video-2"
+		"square square"
+		"small-square big-square"
+		"square-video-1 square-video-2"
+		"string string"
+		"string-video string-video";
+	justify-items: center;
+	grid-row-gap: 2em;
+	margin-bottom: 2em;
+}
+
+#beginner p {
+	grid-area: p-intro;
+}
+
+#sun {
+	grid-area: sun;
+}
+
+h5#sun-no-order {
+	grid-area: sun-no-order;
+}
+
+h5#sun-order {
+	grid-area: sun-order;
+}
+
+h5#sun-no-order + iframe {
+	grid-area: sun-video-1;
+}
+
+h5#sun-order + iframe {
+	grid-area: sun-video-2;
+}
+
+#square {
+	grid-area: square;
+}
+
+h5#small-square {
+	grid-area: small-square;
+}
+
+h5#big-square {
+	grid-area: big-square;
+}
+
+h5#small-square + iframe {
+	grid-area: square-video-1;
+}
+
+h5#big-square + iframe {
+	grid-area: square-video-2;
+}
+
+#string {
+	grid-area: string;
+}
+
+#beginner #string + iframe {
+	grid-area: string-video;
+	width: 800px;
+	height: 400px;
+}
+
+#beginner iframe {
+	width: 550px;
+	height: 300px;
+}
+
+#beginner h5 {
+	font-size: 120%;
+
+}
+
+main a:link {
+	color: rgb(255, 183, 28);
+} 
+
+main a:visited {
+	color: rgb(176, 126, 19);
+}
+
+main a:hover {
+	color: rgb(255, 183, 28);
+}
+
+main a:active {
+	color: rgba(28,169,222,255);
+}
+
+#intermediate {
+	display: grid;
+	grid-template-rows: repeat(4, min-content);
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:
+		"p-intro p-intro p-intro"
+		"two-by-five three-by-five crescent"
+		"two-by-five-video three-by-five-video crescent-video"
+		"note-1 empty note-2";
+	justify-items: center;
+	grid-row-gap: 2em;
+	margin: 0 2em 2em 2em;
+}
+
+#intermediate p {
+	grid-area: p-intro;
+}
+
+#two-by-five {
+	grid-area: two-by-five;
+}
+
+#three-by-five {
+	grid-area: three-by-five;
+}
+#crescent {
+	grid-area: crescent;
+} 
+
+#two-by-five + iframe {
+	grid-area: two-by-five-video;
+}
+
+#three-by-five + iframe {
+	grid-area: three-by-five-video;
+}
+
+#crescent + iframe {
+	grid-area: crescent-video;
+}
+
+#note-1 {
+	grid-area: note-1;
+}
+
+#note-2 {
+	grid-area: note-2;
+}
+
+#note-1, #note-2 {
+	display: flex;
+	margin: 0 auto 1em auto ;
+	padding: 0;
+	background-color: white;
+	border: solid 1px rgb(28,169,222);
+	border-radius: 1rem 0 0 1rem;
+}
+
+p.note {
+	font-size: 1rem;
+	padding: 0.8em;
+	border-left: solid 10px rgb(28,169,222);
+}
+
+span.note {
+	display: block;
+	align-self: center;
+	padding: 0.8rem;
+	font-size: 130%;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#intermediate iframe {
+	width: 400px;
+	height: 250px;
+}
+
+#advanced {
+	display: grid;
+	grid-template-rows: repeat(4, min-content);
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:
+		"p-intro p-intro p-intro"
+		"swirl cobweb rush"
+		"swirl-video cobweb-video rush-video";
+	justify-items: center;
+	grid-row-gap: 2em;
+	margin: 0 2em 2em 2em;
+}
+
+#advanced p {
+	grid-area: p-intro;
+}
+
+#swirl {
+	grid-area: swirl;
+}
+
+#cobweb {
+	grid-area: cobweb;
+}
+
+#rush {
+	grid-area: rush;
+}
+
+#swirl + iframe {
+	grid-area: swirl-video;
+	width: 400px;
+	height: 250px;
+}
+
+#cobweb + iframe {
+	grid-area: cobweb-video;
+	width: 400px;
+	height: 250px;
+}
+
+#rush + iframe {
+	grid-area: rush-video;
+	width: 400px;
+	height: 250px;
+}
+
+div#congrats {
+	margin: 2em;
+	padding: 1em;
+	font-size: 120%;
+	background-color: rgba(175, 98, 252, 0.3);
+	text-align: justify;
+}
+
+span#congrats {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+#congrats p {
+	font-style: italic;
+}
+
+/*End of styling for main content*/
+/*Styling for footer*/
+
+footer {
+	background-color: black;
+	padding: 2em;
+	display: flex;
+	justify-content: flex-start;
+	color: white;
+}
+
+footer h3 {
+	font-style: normal;
+}
+
+#logo {
+	padding-right: 2em;
+	border-right: solid 1px white;
+}
+
+#copyright {
+	margin-top: 1em;
+}
+
+#read-next {
+	padding-left: 2em;
+}
+
+ul.footer-nav {
+	padding-left: 0;
+	padding-top: 2em;
+}
+
+ul.footer-nav a:link {
+	color: rgb(255, 183, 28);
+}
+
+ul.footer-nav a:visited {
+	color: rgb(176, 126, 19);
+}
+
+ul.footer-nav a:hover {
+	color: white;
+	font-size: 102%;
+	padding: 0.2em;
+}
+
+ul.footer-nav a:active {
+	color: rgba(28,169,222,255);
+}
+
+#backtotop {
+	position: fixed;
+	bottom: 1em;
+	right: 1.5em;
+}
+
+#backtotop h5 {
+	text-align: center;
+	font-size: 120%;
+	color: rgb(28,169,222);
+}
+
+#backtotop img {
+	width: 3em;
+	height: 3em;
+	border: solid 1px white;
+	border-radius: 0.5em;
+	background-color: white;
+}
+

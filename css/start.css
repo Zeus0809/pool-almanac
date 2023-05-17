@@ -1,0 +1,111 @@
+* {
+	margin: 0;
+}
+
+body {
+	font: 100% 'Rubik', sans-serif;
+	background-color: rgb(204, 233, 255);
+	border-right: solid 1px grey;
+}
+
+main {
+	margin: 1em;
+}
+
+li {list-style-type: none;}
+
+hr {display: none;}
+
+a {text-decoration: none}
+
+#header-flex {
+	margin: 1em 5%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+img[src*="logo"] {
+	margin: 0.5em 1.5em 0.5em 0;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 3rem;
+	color: rgba(56,46,45,255);
+	text-shadow: 0 0.05em rgba(28,169,222,255); /*main color in the website color scheme*/
+}
+
+/*Styling for Navigation Bar*/
+
+ul#navigation {
+	width: 100%;
+	background-color: rgba(28,169,222,255);
+	border-top: solid 1px black;
+	border-bottom: solid 1px black;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+ul#navigation > li {
+	position: relative;
+	background-color: rgb(204, 233, 255);
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	margin: 0;
+	padding: 0.5em 3.5em;
+	text-transform: uppercase;
+}
+
+ul#navigation > li.category:hover {
+	background-color: rgb(177, 203, 222);
+	font-weight: 500;
+}
+
+ul.submenu {
+	display: none;
+	background-color: rgb(204, 233, 255);
+	border: 1px solid black;
+	padding: 0;
+}
+
+li.category:hover ul.submenu {
+	display: block;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 100%;
+	left: -1px;
+}
+
+li.category:hover ul.submenu li {
+	font-weight: normal;
+	border-bottom: solid 1px black;
+	text-align: center;
+	margin: 0 1em;
+	padding: 0.5em;
+}
+
+li.category:hover ul.submenu li:last-child {
+	border-bottom: none;
+}
+
+ul#navigation ul.submenu li:hover {
+	background-color: rgb(177, 203, 222);
+	font-weight: 500;
+	margin: 0;
+	padding: 0.5em 1.5em;
+	border: none;
+}
+
+nav a:visited {
+	color: black;
+}
+
+nav a:active {
+	color: rgb(28,169,222,255);
+}
+
+/*End of styling for Navigation Bar*/
+

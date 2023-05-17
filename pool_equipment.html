@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pool Equipment</title>
+	<style>
+		@import url('css/start.css');
+		@import url('css/equipment_styles.css');
+		@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+	<header id='top'>
+		<div id="header-flex">
+			<img src="multimedia/pics/logo.png" alt="A banner with a pool table">
+			<h1>Pool Almanac</h1>
+		</div>
+		<nav>
+			<ul id="navigation">
+				<li><a href="home_page.html">Home page</a></li>
+				<li class="category">How to play pool
+					<ul class="submenu">
+						<li><a href="pool_equipment.html">Pool equipment</a></li>
+						<li><a href="first_stroke.html">Make your first stroke</a></li>
+						<li><a href="cueball_control.html">Control your cue ball</a></li>
+					</ul>
+				</li>
+				<li class="category">The Rules
+					<ul class="submenu">
+						<li><a href="8-ball.html">8-ball</a></li>
+						<li><a href="9-ball.html">9-ball</a></li>
+					</ul>
+				</li>
+				<li class="category">Drills by Levels
+					<ul class="submenu">
+						<li><a href="drills.html#beginner">Beginner</a></li>
+						<li><a href="drills.html#intermediate">Intermediate</a></li>
+						<li><a href="drills.html#advanced">Advanced</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<hr>
+	<main>
+		<h2>Pool Equipment</h2>
+		<p>Let’s familiarize ourselves with different kinds of equipment used when playing pool. To be able to play a game, you will need a pool table, a set of pool balls, a triangle, a pool cue, and chalk. This is the minimum supply needed by one player to shoot. However, depending on the kind of game, level of players, and other factors, equipment may vary. You can see the whole range of possible pool equipment in the table below.</p>
+		<div id="equipment-grid">
+			<div class="column" id="tables">
+				<div class="cell"><h2>tables</h2></div>
+				<div class="cell">
+					<div class="nested-cell">9-foot</div>
+					<div class="nested-cell">8-foot</div>
+					<div class="nested-cell">7-foot</div>
+				</div>
+				<div class="cell">
+					<p>legs + base + 4 rails (2 short and 2 long ones) + 6 pockets</p>
+				</div>
+				<div class="cell"><h3>pocket size in inches</h3></div>
+				<div class="cell">
+					<div class="nested-cell">4&Prime;</div>
+					<div class="nested-cell">4.125&Prime;</div>
+					<div class="nested-cell">4.25&Prime;</div>
+					<div class="nested-cell">4.5&Prime;</div>
+					<div class="nested-cell">5&Prime;</div>
+				</div>
+				<div class="cell"><h3>felt</h3></div>
+				<div class="cell">
+					<div class="nested-cell">green</div>
+					<div class="nested-cell">blue</div>
+					<div class="nested-cell">grey</div>
+				</div>
+				<div class="cell"><h3 class="brands">producer brands</h3></div>
+				<div class="cell brands">Diamond, Brunswick, Dynamic, Olhausen, Rasson, Predator</div>
+			</div>
+			<div class="column" id="balls">
+				<div class="cell"><h2>balls</h2></div>
+				<div class="cell">
+					<p><h4 class="ball-group">cue ball:</h4>solid or dotted white</p>
+				</div>
+				<div class="cell">
+					<p><h4 class="ball-group">solid balls 1-8:</h4>yellow 1, blue 2, red 3, purple/pink 4, orange/green 5, green/turquoise 7, black 8</p>
+				</div>
+				<div class="cell">
+					<p><h4 class="ball-group">striped balls 9-15:</h4>same color scheme as solids</p>
+				</div>
+				<div class="cell"><h3 class="brands">producer brands</h3></div>
+				<div class="cell brands">Aramith, Brunswick, Predator, Cyclop, Elephant, Meucci</div>
+			</div>
+			<div class="column" id="cues">
+				<div class="cell"><h2>cues</h2></div>
+				<div class="cell">
+					<div class="nested-cell">Playing cue</div>
+					<div class="nested-cell">Break cue</div>
+					<div class="nested-cell">Jump cue</div>
+				</div>
+				<div class="cell">
+					<p><em>shaft</em> (thin upper part) + <em>butt</em> (thick lower part) + <em>ferrule</em> (solid component below tip) + <em>tip</em> (hard, medium, soft, super soft)</p>
+				</div>
+				<div class="cell"><h3>material</h3></div>
+				<div class="cell">
+					<div class="nested-cell">wood</div>
+					<div class="nested-cell">carbon fiber</div>
+				</div>
+				<div class="cell"><h3>deflection</h3></div>
+				<div class="cell">
+					<div class="nested-cell">high</div>
+					<div class="nested-cell">low</div>
+				</div>
+				<div class="cell"><h3 class="brands">producer brands</h3></div>
+				<div class="cell brands">Predator, Mezz Cues, McDermott, Viking, Cuetec, Meucci, Pechauer, Players</div>
+			</div>
+			<div class="column" id="accessories">
+				<div class="cell"><h2>accessories</h2></div>
+				<div class="cell"><h3>rack</h3></div>
+				<div class="cell">
+					<div class="nested-cell"><h4 class="rack-type">triangle</h4></div>
+					<div class="nested-cell"><h4 class="rack-type">template</h4></div>
+				</div>
+				<div class="cell">
+					<p>used to rack balls in a certain shape</p>
+				</div>
+				<div class="cell">
+					<div class="nested-cell">weak racking</div>
+					<div class="nested-cell">tight racking</div>
+				</div>
+				<div class="cell"><h3>chalk</h3></div>
+				<div class="cell">
+					<p>creates friction between the tip and balls and prevents skids</p>
+				</div>
+				<div class="cell"><h3 id="extension">cue extension</h3></div>
+				<div class="cell">
+					<p>extends the cue so the player can reach far balls</p>
+				</div>
+				<div class="cell"><h3>pool glove</h3></div>
+				<div class="cell">
+					<p>smoothens pre-strokes as the cue rubs easier on the fiber than skin</p>
+				</div>
+				<div class="cell"><h3 class="brands">producer brands</h3></div>
+				<div class="cell brands">Predator, Sniper, Taom, Master, Kamui, CueSight, Imperial, Joe Porper</div>
+			</div>
+		</div>
+		<h2 id="gallery-heading">Gallery of images of pool equipment</h2>
+		<div id="gallery-grid">
+			<div class="gallery" id="tables-photos">
+				<div class="image-block">
+					<img src="multimedia/pics/9-foot.webp" alt="9-foot table">
+					<a href="https://www.spotonbilliards.com/products/diamond-proam-pool-table" class="reference" target="newtab">Photo: Spot On Billiards</a>
+				</div>
+				<div class="image-block">
+					<img src="multimedia/pics/8-foot.webp" alt="8-foot table">
+					<a href="https://www.real-billiard.com/en/product/1072/professional-pool-table-dynamic-iii-8-feet.html" class="reference" target="newtab">Photo: Real Billiard LTD</a>
+				</div>
+				<div class="image-block">
+					<img src="multimedia/pics/7-foot.png" alt="7-foot table">
+					<a href="https://seyberts.com/collections/predator-apex-tables/products/predator-apex-7ft-pool-table?variant=42496524124358" class="reference" target="newtab">Photo: Seybert's Billiards Supply</a>
+				</div>
+			</div>
+			<div class="gallery" id="balls-photos">
+				<div class="image-block">
+					<img src="multimedia/pics/solid_cueball.jpg" alt="A solid cue ball">
+					<a href="https://www.muellers.com/Pool-Balls.html" class="reference" target="newtab">Photo: Muelle’s Billiard & Dart Supplies</a>
+				</div>
+				<img src="multimedia/pics/dotted_cueball.webp" alt="A dotted cue ball">
+				<img src="multimedia/pics/solids.webp" alt="solids">
+				<img src="multimedia/pics/stripes.webp" alt="stripes">
+			</div>
+			<div class="gallery" id="cues-photos">
+				<div class="slider">
+					<img src="multimedia/pics/playing_cue_1.webp" alt="A playing cue">
+					<img src="multimedia/pics/playing_cue_2.webp" alt="Another playing cue">
+					<img src="multimedia/pics/break_cue_1.webp" alt="A break cue">
+					<img src="multimedia/pics/break_cue_2.webp" alt="Another break cue">
+					<img src="multimedia/pics/jump_cue.webp" alt="A jump cue">
+					<img src="multimedia/pics/ferrule.webp" alt="A ferrule">
+				</div>
+				<div class="controls">
+					<button class="prev">&#10094;</button>
+					<button class="next">&#10095;</button>
+				</div>
+			</div>
+			<div class="gallery" id="accessories-photos">
+				<img src="multimedia/pics/triangle.webp" alt="A triangle rack">
+				<img src="multimedia/pics/magic_rack.webp" alt="A template called 'magic rack'">
+				<img src="multimedia/pics/chalk.webp" alt="A billiard chalk">
+				<img src="multimedia/pics/extension.webp" alt="An extension">
+				<img src="multimedia/pics/glove.webp" alt="A billiard glove">
+			</div>
+		</div>
+		<div id="mechanical-bridge">
+			<figure>
+				<figcaption>Mechanical Bridge</figcaption>
+				<img src="multimedia/pics/mechanical_bridge.jpg" alt="A mechanical bridge">
+				<p>Mechanical bridge is a special kind of pool equipment used instead of a hand bridge when a player cannot reach their shot. It usually includes two parts: a plain cue stick and a <strong>spider</strong>, which is put on the cue tip to provide a nest for the cue instead of a hand bridge. Mechanical bridge strokes are different from normal shots and require separate skills to master.</p>
+			</figure>
+		</div>
+	</main>
+	<hr>
+	<footer>
+		<div id="logo">
+			<img src="multimedia/pics/logo-small.png" alt="A banner with a pool table">
+			<div id="copyright">© Pool Almanac 2023<br>All rights reserved.</div>
+		</div>
+		<div id="read-next">
+			<h3>Read next: &#x1F447;</h3>
+			<ul class="footer-nav">
+				<li><a href="first_stroke.html">Make your first stroke </a></li>
+			</ul>
+		</div>
+		<div id="backtotop">
+			<h5>TOP</h5>
+			<a href="#top"><img src="multimedia/pics/back_to_top.png" alt="back to top image"></a>
+		</div>
+	</footer>
+	<script>
+		$(document).ready(function() {
+  			$('.slider').each(function() {
+    			var $slider = $(this);
+    			var $sliderWrapper = $slider.parent();
+    			var $sliderControls = $sliderWrapper.find('.controls button');
+    			var sliderIndex = 0;
+    			var sliderItemWidth = $slider.find('img').eq(0).width();
+
+    			$sliderControls.click(function() {
+      				if ($(this).hasClass('prev')) {
+        				sliderIndex--;
+        				if (sliderIndex < 0) {
+          					sliderIndex = $slider.find('img').length - 1;
+        				}
+      				} else {
+        				sliderIndex++;
+        				if (sliderIndex >= $slider.find('img').length) {
+          					sliderIndex = 0;
+        				}
+      				}
+
+      				$slider.animate({
+        				left: -sliderIndex * sliderItemWidth
+      				}, 500);
+    			});
+  			});
+		});
+	</script>			
+</body>
+</html>

@@ -1,0 +1,432 @@
+* {
+	margin: 0;
+}
+
+body {
+	font: 100% 'Rubik', sans-serif;
+	background-color: rgb(204, 233, 255);
+	border-right: solid 1px grey;
+}
+
+main {
+	margin: 1em;
+}
+
+li {list-style-type: none;}
+
+hr {display: none;}
+
+a {text-decoration: none}
+
+#header-flex {
+	margin: 1em 5%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+img[src*="logo"] {
+	margin: 0.5em 1.5em 0.5em 0;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 3rem;
+	color: rgba(56,46,45,255);
+	text-shadow: 0 0.05em rgba(28,169,222,255); /*main color in the website color scheme*/
+}
+
+/*Styling for Navigation Bar*/
+
+ul#navigation {
+	width: 100%;
+	background-color: rgba(28,169,222,255);
+	border-top: solid 1px black;
+	border-bottom: solid 1px black;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+ul#navigation > li {
+	position: relative;
+	background-color: rgb(204, 233, 255);
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	margin: 0;
+	padding: 0.5em 3.5em;
+	text-transform: uppercase;
+}
+
+ul#navigation > li.category:hover {
+	background-color: rgb(177, 203, 222);
+	font-weight: 500;
+}
+
+ul.submenu {
+	display: none;
+	background-color: rgb(204, 233, 255);
+	border: 1px solid black;
+	padding: 0;
+}
+
+li.category:hover ul.submenu {
+	display: block;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 100%;
+	left: -1px;
+}
+
+li.category:hover ul.submenu li {
+	font-weight: normal;
+	border-bottom: solid 1px black;
+	text-align: center;
+	margin: 0 1em;
+	padding: 0.5em;
+}
+
+li.category:hover ul.submenu li:last-child {
+	border-bottom: none;
+}
+
+ul#navigation ul.submenu li:hover {
+	background-color: rgb(177, 203, 222);
+	font-weight: 500;
+	margin: 0;
+	padding: 0.5em 1.5em;
+	border: none;
+}
+
+nav a:visited {
+	color: black;
+}
+
+nav a:active {
+	color: rgb(28,169,222,255);
+}
+
+/*End of styling for Navigation Bar*/
+/*Styling for main content*/
+
+main p {
+	font-size: 120%;
+}
+
+h2 {
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	background-color: rgb(255, 183, 28);
+	border: solid 1px black;
+	border-radius: 1rem;
+}
+
+main h3 {
+	font-size: 130%;
+	padding: 0.5em;
+	background-color: white;
+	border: solid 1px black;
+	border-radius: 0.5em;
+	width: 25%;
+	text-align: center;
+}
+
+main img {
+	border: solid 1px black;
+	border-radius: 1em;
+}
+
+main > *:not(h2, h3) {
+	margin: 0 2em;
+}
+
+main p:not(.note) {
+	text-align: justify;
+	margin: 1em 0;
+	padding: 0.5em 1em;
+	background-color: rgba(227, 208, 197, 0.5);
+	line-height: 1.5em
+}
+
+h2 + img {
+	display: block;
+	margin: 0 auto 2em auto;
+}
+
+div.note {
+	display: flex;
+	margin: 2em;
+	padding: 0;
+	background-color: white;
+	border: solid 1px rgb(28,169,222);
+	border-radius: 1rem 0 0 1rem;
+}
+
+p.note {
+	font-size: 1rem;
+	padding: 0.8em;
+	border-left: solid 10px rgb(28,169,222);
+}
+
+span.note {
+	display: block;
+	align-self: center;
+	padding: 0.8rem;
+	font-size: 130%;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+div.note:has(#caution) {
+	border-color: rgb(255, 183, 28);
+}
+
+#caution + p.note {
+	border-left-color: rgb(255, 183, 28);
+} 
+
+#quote-container {
+	text-align: center;
+}
+
+#quote {
+	display: inline-block;
+	text-align: center;
+	margin: 3em;
+	padding: 2em 3em 1.5em 3em;
+	border: solid 1px black;
+	background-color: rgb(28,169,222);
+	border-radius: 5px;
+}
+
+#quote-author {
+	display: inline-block;
+	font-size: 80%;
+	margin-top: 1em;
+	font-style: italic;
+}
+
+blockquote {
+  	position: relative;
+  	display: inline-block;
+  	text-align: right;
+  	font-family: 'Righteous', Helvetica, serif;
+  	font-size: 1.5em;
+  	color: white;
+  	text-shadow: 0.05em 0.05em black;
+}
+
+blockquote::before {
+  	content: "“";
+  	position: absolute;
+  	font-size: 2.5em;
+  	top: 0.2em;
+  	left: -0.5em;
+}
+
+blockquote::after {
+  	content: "”";
+  	position: absolute;
+ 	font-size: 2.5em;
+  	bottom: 0.4em;
+  	right: -0.5em;
+}
+
+dfn {
+	font-weight: bold;
+	color: white;
+	text-shadow: 0.05em 0.05em black,
+				 -0.05em -0.05em black,
+				 0.05em -0.05em black,
+				 -0.05em 0.05em black;
+	font-style: normal;
+	padding: 0.2em;
+}
+
+em {
+	text-decoration: underline;
+	font-style: normal;
+}
+
+main a:link {
+	color: rgb(255, 183, 28);
+} 
+
+main a:visited {
+	color: rgb(176, 126, 19);
+}
+
+main a:hover {
+	color: rgb(255, 183, 28);
+}
+
+main a:active {
+	color: rgba(28,169,222,255);
+}
+
+#speed-flex {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+
+#speed-flex img {
+	width: 80%;
+	height: 80%;
+}
+
+#speed-flex figcaption {
+	display: inline-block;
+	font-weight: bold;
+	margin-top: 1em;
+}
+
+#side-spin-types {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+
+#side-spin-types figcaption {
+	display: inline-block;
+	font-weight: bold;
+	margin-top: 1em;
+}
+
+.spin-flex {
+	display: grid;
+	grid-template-rows: min-content 1fr;
+	grid-template-columns: min-content 360px;
+	grid-template-areas: 
+		"image heading"
+		"image paragraph";
+	grid-column-gap: 2em;
+	width: 75%;
+	margin: 0 auto 2em auto;
+}
+
+.spin-flex img {
+	grid-area: image;
+}
+
+.spin-flex h4 {
+	grid-area: heading;
+	font-size: 110%;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 0.5em;
+	border-left: solid 5px white;
+	background-color: rgb(28,169,222);
+}
+
+.spin-flex p {
+	grid-area: paragraph;
+	margin: 0 !important;
+	border-left: solid 5px white;
+}
+
+.spin-flex dfn {
+	padding-left: 0;
+}
+
+.spin-flex:last-of-type h4 {
+	white-space: nowrap;
+	padding: 0.5em 1em;
+}
+
+.spin-flex:last-of-type {
+	grid-template-columns: repeat(2, min-content);
+}
+
+#corey {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-evenly;
+}
+
+#corey p {
+	width: 466px;
+}
+
+#corey iframe {
+	width: 466px;
+	height: 262px;
+	border: solid 1px black;
+	border-radius: 1em;
+}
+
+/*End of styling for main content*/
+/*Styling for footer*/
+
+footer {
+	background-color: black;
+	padding: 2em;
+	display: flex;
+	justify-content: flex-start;
+	color: white;
+}
+
+footer h3 {
+	font-style: normal;
+}
+
+#logo {
+	padding-right: 2em;
+	border-right: solid 1px white;
+}
+
+#copyright {
+	margin-top: 1em;
+}
+
+#read-next {
+	padding-left: 2em;
+}
+
+ul.footer-nav {
+	padding-left: 0;
+	padding-top: 2em;
+}
+
+ul.footer-nav a:link {
+	color: rgb(255, 183, 28);
+}
+
+ul.footer-nav a:visited {
+	color: rgb(176, 126, 19);
+}
+
+ul.footer-nav a:hover {
+	color: white;
+	font-size: 102%;
+	padding: 0.2em;
+}
+
+ul.footer-nav a:active {
+	color: rgba(28,169,222,255);
+}
+
+#backtotop {
+	position: fixed;
+	bottom: 1em;
+	right: 1.5em;
+}
+
+#backtotop h5 {
+	text-align: center;
+	font-size: 120%;
+	color: rgb(28,169,222);
+}
+
+#backtotop img {
+	width: 3em;
+	height: 3em;
+	border: solid 1px white;
+	border-radius: 0.5em;
+	background-color: white;
+}
+
+

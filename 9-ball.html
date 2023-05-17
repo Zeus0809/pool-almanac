@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>9-ball Rules</title>
+	<style>
+		@import url('css/start.css');
+		@import url('css/9-ball-styles.css');
+		@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+	</style>
+</head>
+<body>
+	<header id='top'>
+		<div id="header-flex">
+			<img src="multimedia/pics/logo.png" alt="A banner with a pool table">
+			<h1>Pool Almanac</h1>
+		</div>
+		<nav>
+			<ul id="navigation">
+				<li><a href="home_page.html">Home page</a></li>
+				<li class="category">How to play pool
+					<ul class="submenu">
+						<li><a href="pool_equipment.html">Pool equipment</a></li>
+						<li><a href="first_stroke.html">Make your first stroke</a></li>
+						<li><a href="cueball_control.html">Control your cue ball</a></li>
+					</ul>
+				</li>
+				<li class="category">The Rules
+					<ul class="submenu">
+						<li><a href="8-ball.html">8-ball</a></li>
+						<li><a href="9-ball.html">9-ball</a></li>
+					</ul>
+				</li>
+				<li class="category">Drills by Levels
+					<ul class="submenu">
+						<li><a href="drills.html#beginner">Beginner</a></li>
+						<li><a href="drills.html#intermediate">Intermediate</a></li>
+						<li><a href="drills.html#advanced">Advanced</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<hr>
+	<main>
+		<div id="decor">
+			<h2>The Rules: 9-ball</h2>
+		</div>
+		<p class="introduction">Welcome to my guide on the rules of 9-ball, a thrilling cue sport that first originated in the early 1900s in the United States. With its fast pace and emphasis on strategy, 9-ball has gained immense popularity in both amateur and professional circles and is played in pool halls and tournaments worldwide.</p>
+		<div class="heading-flex">
+			<h3>How to play?</h3>
+			<img src="multimedia/pics/9-balls-row.jpg" alt="Ball set for 9-ball, from 1 to 9">
+		</div>
+		<p>In 9-ball, the game is played with nine object balls numbered 1 through 9, and the goal is to sink the 9 ball before your opponent does. The balls must be pocketed in numerical order, and any ball that is legally pocketed allows the player to continue shooting. The game is won by the first player to make the 9 ball legally.</p>
+		<div id="break">
+			<h3>Break</h3>
+			<div id="break-flex">
+				<p>Breaking the rack is an important part of pool: on the professional level, a nice break shot is often the key to winning a game. A legal break shot in 9-ball is done by placing the cue ball anywhere behind the head string and hitting the rack in a way that at least 4 balls from it touch the rail. Just like in 8-ball, making balls on the break lets you keep shooting. There is more to it: making the 9 on the break is a <a href="9-ball.html#references" class="reference">game win [1]</a>. <span class="pro-tip">Pro Tip:</span> Due to the way physics affect balls, players most of the time break a 9-ball rack from the corner, i.e. from a point close to either long rail. That way you can make more balls on the break and get a better layout.</p>
+				<img src="multimedia/gifs/9-ball-break.gif" alt="A break in 9-ball">
+			</div>
+			<div class="note"><span class="note">Side Note</span><p class="note"><dfn>Three-point rule.</dfn>This is a relatively new break complication that some billiard federations have adopted, especially in Europe. It says that in order to stay at the table after the break, a player should do one of the following: 1) make 1 ball and get 2 other balls to cross the head string; 2) make 2 balls and get 1 other ball to cross the head string; 3) make 3 balls.</p>
+			</div>
+		</div>
+		<div id="push-out">
+			<h3>Push out</h3>
+			<p>In order to make the game fair, the shooting player has a <dfn>push-out</dfn> option right after the break. If they decide to use it, the player needs to call <q>push out</q> or <q>push</q> and then they can perform any kind of shot they desire, without having to hit the 1 ball. After a push-out, the incoming player can either take the position and shoot or give the turn back to their opponent. This can be useful to avoid a foul when you are stuck behind other balls after the break. <span class="pro-tip">Pro Tip:</span> Think how you can use push-out to trick your opponent into giving you a nice layout.</p>
+		</div>
+		<div id="fouls">
+			<h3>Fouls</h3>
+			<p class="list-heading">Every game in pool has the concept of <dfn>foul</dfn>, or an illegal shot. There is always a penalty charged to the player who fouled, and the opponent gets some kind of advantage. Let’s look at all possible foul cases in 9-ball:</p>
+			<ul>
+				<li class="foul-flex">
+					<p>Just like in most games of pool, pocketing the cue ball is a foul (it’s called a <dfn>scratch</dfn>). The opponent gets <dfn><q>ball in hand</q></dfn> and places the cue ball anywhere on the table for their next shot.</p>
+					<img src="multimedia/gifs/scratch.gif" alt="Scratch demo, GIF file">
+				</li>
+				<li class="foul-flex">
+					<p>Another type of foul is hitting a wrong ball with the cue ball. Since in 9-ball you have to make balls in order, hitting any ball other than the lowest on the table is a foul. The opponent gets ball in hand.</p>
+					<img src="multimedia/gifs/9_wrong_ball_foul.gif" alt="Demo of a wrong ball foul in 9-ball, GIF file">
+				</li>
+				<li class="foul-flex">
+					<p>If a player touches <a href="9-ball.html#references" class="reference">any ball on the table [2]</a> with their cue stick, hand, apparel, or any object other than the cue tip, it is ball in hand for the opponent.</p>
+					<img src="multimedia/gifs/touch_foul.gif" alt="Demo of a foul by touching other balls, GIF file">
+				</li>
+				<li class="foul-flex">
+					<p>If any ball flies off the table, it is ball in hand. Any object ball driven off the table stays in the pocket and doesn’t get <a href="9-ball.html#references" class="reference">spotted [3]</a>.</p>
+					<img src="multimedia/gifs/fly_off_foul.gif" alt="Demo of a foul by driving a ball off the table, GIF file">
+				</li>
+				<li class="foul-flex">
+					<p>No rail after the shot. If none of the balls touches at least one rail after the contact, and nothing is pocketed, the shot is considered illegal. Ball in hand.</p>
+					<img src="multimedia/gifs/no_rail_foul.gif" alt="Demo of a foul when no ball touches a rail after the shot, GIF file">
+				</li>
+			</ul>
+		</div>
+		<div id="flukes">
+			<h3>Flukes</h3>
+			<p>Another thing to keep in mind is accidentally pocketed balls, or <dfn>flukes</dfn>. In 9-ball, any fluked ball stays in the pocket and lets the shooting player continue their turn. That means 9-ball is NOT a call shot game, which is good news. The 9 is not an exception! This rule makes 9-ball arguably the luckiest game in pool.</p>
+		</div>
+		<div id="safety">
+			<h3>Safety</h3>
+			<p>All possible shots in pool games can be divided into 2 categories: <dfn>offensive</dfn> and <dfn>defensive</dfn> shots. It is important to know when and how to use both in order to win more games. Defensive shots are usually called <dfn>safeties</dfn> or <dfn>playing safe</dfn>. If a player decides to play safe, they don’t <a href="9-ball.html#references" class="reference">go for a pot [4]</a>, but rather try to put the cue ball in an awkward or uncomfortable position for their opponent. In 9-ball, you will often want to hide the cue ball behind other balls so that your opponent can’t see the lowest ball to hit.</p>
+		</div>
+		<div id="3-foul-rule">
+			<h3>Three-foul rule</h3>
+			<p>This is a special rule used only in 9-ball and 10-ball. It’s actually self-explanatory: if a player performs three foul shots in a row, they lose the game. However, this rule is also subject to the tournament director’s decision. Some event formats don’t enact the three-foul rule.</p>
+		</div>
+		<div id="racking">
+			<h3>Racking</h3>
+			<p>Depending on the tournament rules there can be two ways to rack a 9-ball: with 1 ball on the spot, or 9 ball on the spot. Generally, most amateur tournaments in the <abbr>USA</abbr> have the players rack 1 ball on the spot. Professional events, on the other hand, like <a href="https://matchroompool.com/" target="newtab">Matchroom Nineball Tour</a> use the 9-ball-on-the-spot format.</p>
+		</div>
+		<h3>Example Rack</h3>
+		<div id="example-rack">
+			<p>Now that you are familiar with the rules, it’s time to try 9-ball. I hope you enjoy this game!</p>
+			<iframe src="https://www.youtube.com/embed/CpNA2--tvYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</div>
+		<hr>
+		<div id="references">
+			<h3>References</h3>
+			<ol>
+				<li>That can depend on the tournament rules. Some directors will cancel the 9-on-the-break rule and have the players spot it back instead.</li>
+				<li>Different tournaments may have 2 variations of this rule: it is either <q>all ball fouls</q> (when ball in hand is given for any illegal touch), or <q>cue ball fouls</q> (when ball in hand is only given in case of touching the cue ball on accident).</li>
+				<li>To spot a ball means to take it out of a pocket and put it on the <dfn>spot</dfn> (the middle mark on a pool table located where the second diamond lines cross)</li>
+				<li><dfn>Pot</dfn> – a short term for making or pocketing a ball. The act of making a ball is referred to as pot.</li>
+			</ol>
+		</div>
+	</main>
+	<hr>
+	<footer>
+		<div id="logo">
+			<img src="multimedia/pics/logo-small.png" alt="A banner with a pool table">
+			<div id="copyright">© Pool Almanac 2023<br>All rights reserved.</div>
+		</div>
+		<div id="read-next">
+			<h3>Read next: &#x1F447;</h3>
+			<ul class="footer-nav">
+				<li><a href="drills.html">Practice Drills
+			</ul>
+		</div>
+		<div id="backtotop">
+			<h5>TOP</h5>
+			<a href="#top"><img src="multimedia/pics/back_to_top.png" alt="back to top image"></a>
+		</div>
+	</footer>
+</body>
+</html>
